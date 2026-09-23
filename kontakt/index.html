@@ -366,8 +366,106 @@ class="post-3140 page type-page status-publish ast-article-single" id="post-3140
 					</div>
 		</div>
 				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fa28955" data-id="fa28955" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-widget-wrap">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<style>
+				.cab-contact-form {
+					background: #ffffff;
+					padding: 28px 32px;
+					box-sizing: border-box;
+					width: 100%;
+				}
+				.cab-contact-form h2 {
+					margin: 0 0 1.25rem;
+					font-family: "Raleway", sans-serif;
+					font-weight: 600;
+					font-size: 1.35rem;
+					color: #19150f;
+					letter-spacing: 0.02em;
+				}
+				.cab-contact-form .cab-field {
+					margin-bottom: 1.1rem;
+				}
+				.cab-contact-form label {
+					display: block;
+					margin-bottom: 0.4rem;
+					font-family: "Lato", sans-serif;
+					font-size: 0.95rem;
+					color: #413e3a;
+				}
+				.cab-contact-form input[type="text"],
+				.cab-contact-form input[type="email"],
+				.cab-contact-form textarea {
+					width: 100%;
+					box-sizing: border-box;
+					border: 1px solid #dedad3;
+					background: #fff;
+					padding: 0.7rem 0.85rem;
+					font-family: "Lato", sans-serif;
+					font-size: 1rem;
+					color: #19150f;
+					border-radius: 0;
+					outline: none;
+					transition: border-color 0.2s ease;
+				}
+				.cab-contact-form input[type="text"]:focus,
+				.cab-contact-form input[type="email"]:focus,
+				.cab-contact-form textarea:focus {
+					border-color: #b69d78;
+				}
+				.cab-contact-form textarea {
+					resize: vertical;
+					min-height: 7rem;
+				}
+				.cab-contact-form .cab-submit {
+					display: inline-block;
+					margin-top: 0.35rem;
+					background: transparent;
+					border: none;
+					border-bottom: 2px solid #b69d78;
+					padding: 0.55rem 0.15rem;
+					font-family: "Raleway", sans-serif;
+					font-weight: 600;
+					font-size: 1rem;
+					letter-spacing: 0.06em;
+					text-transform: uppercase;
+					color: #19150f;
+					cursor: pointer;
+					transition: color 0.2s ease, border-color 0.2s ease;
+				}
+				.cab-contact-form .cab-submit:hover,
+				.cab-contact-form .cab-submit:focus {
+					color: #b69d78;
+					outline: none;
+				}
+				@media (max-width: 767px) {
+					.cab-contact-form { padding: 24px 20px; }
+				}
+				</style>
+				<div class="elementor-element elementor-widget elementor-widget-html" data-element_type="widget" data-e-type="widget">
+					<div class="elementor-widget-container">
+						<form class="cab-contact-form" method="POST" action="https://formsubmit.co/brannen@bluewin.ch">
+							<h2>Nachricht senden</h2>
+							<input type="hidden" name="_subject" value="Kontaktanfrage — Carmen Annen Bonati Art">
+							<input type="hidden" name="_template" value="table">
+							<input type="hidden" name="_next" value="https://yelggy.github.io/cannenbonati/kontakt/danke.html">
+							<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+							<div class="cab-field">
+								<label for="cab-name">Name</label>
+								<input type="text" id="cab-name" name="name" required autocomplete="name">
 							</div>
+							<div class="cab-field">
+								<label for="cab-email">E-Mail</label>
+								<input type="email" id="cab-email" name="email" required autocomplete="email">
+							</div>
+							<div class="cab-field">
+								<label for="cab-message">Nachricht</label>
+								<textarea id="cab-message" name="message" rows="5" required></textarea>
+							</div>
+							<button type="submit" class="cab-submit">Senden</button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 					</div>
 		</section>
