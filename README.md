@@ -20,7 +20,7 @@ This is a mirrored static snapshot of the public WordPress / Elementor / Astra s
 
 ## Contact form
 
-The Kontakt page form posts to [FormSubmit](https://formsubmit.co) (`formsubmit.co/brannen@bluewin.ch`). On the **first** submission, FormSubmit emails `brannen@bluewin.ch` asking to confirm the endpoint; after that confirmation, further submissions are forwarded as normal contact emails. reCAPTCHA stays enabled for spam protection. Success redirects to `/kontakt/danke.html`.
+The Kontakt page form posts to [FormSubmit](https://formsubmit.co) (`formsubmit.co/brannen@bluewin.ch`). On the **first** submission, FormSubmit emails `brannen@bluewin.ch` asking to confirm the endpoint; after that confirmation, further submissions are forwarded as normal contact emails. reCAPTCHA stays enabled for spam protection. Success redirects to `/kontakt/danke/` (pretty permalink; `/kontakt/danke.html` redirects there).
 
 ## Notes
 
