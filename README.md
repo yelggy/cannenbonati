@@ -1,32 +1,24 @@
-# Carmen Annen Bonati Art — static mirror
+# Carmen Annen Bonati Art — static site
 
-Close visual-match static rebuild of [cannenbonati.ch](https://cannenbonati.ch) for GitHub Pages.
-
-This is a mirrored static snapshot of the public WordPress / Elementor / Astra site (pages, CSS, JS, and media). It is intended for offline browsing and GitHub Pages hosting under `yelggy/cannenbonati`.
+Clean static rebuild of [cannenbonati.ch](https://cannenbonati.ch) for GitHub Pages (`yelggy/cannenbonati`).
 
 ## Pages
 
 - `/` — Home
-- `/malerei-collagen/`
-- `/installationen/`
-- `/objekte/`
-- `/kunst-am-bau/`
-- `/kreiselgestaltung/`
+- `/malerei-collagen/`, `/installationen/`, `/objekte/`, `/kunst-am-bau/`, `/kreiselgestaltung/`
 - `/bilder-zu-kaufen/`
 - `/biografie/`
-- `/kontakt/`
-- `/impressum/`
-- `/datenschutzerklaerung/`
+- `/kontakt/` → FormSubmit → `/kontakt/danke/`
+- `/impressum/`, `/datenschutzerklaerung/`
 
 ## Contact form
 
-The Kontakt page form posts to [FormSubmit](https://formsubmit.co) (`formsubmit.co/brannen@bluewin.ch`). On the **first** submission, FormSubmit emails `brannen@bluewin.ch` asking to confirm the endpoint; after that confirmation, further submissions are forwarded as normal contact emails. reCAPTCHA stays enabled for spam protection. Success redirects to `/kontakt/danke/` (pretty permalink; `/kontakt/danke.html` redirects there).
+Posts to [FormSubmit](https://formsubmit.co) (`brannen@bluewin.ch`). Success redirects to `https://cannenbonati.ch/kontakt/danke/` (pretty URL; `/kontakt/danke.html` redirects there).
 
-## Notes
+## Stack
 
-- Some WordPress API / feed / xmlrpc links remain in the HTML head but are not required for viewing the site.
-- Asset filenames may include a literal `--q--ver=…` segment (from wget offline conversion of cache-busting query strings).
+Shared chrome in `assets/site.css` + `assets/site.js`. Media remains under `wp-content/uploads/`. Brand: gold `#b69d78`, near-black `#19150f`, magenta logo accent.
 
 ## GitHub Pages
 
-Served from the `main` branch root (`.nojekyll` is present so paths with underscores are not ignored by Jekyll).
+`main` (or preview branches) at repo root. `.nojekyll` and `CNAME` (`cannenbonati.ch`) are present.

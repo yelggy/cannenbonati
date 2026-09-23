@@ -4,119 +4,67 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vielen Dank | Carmen Annen Bonati Art</title>
+<meta name="description" content="Vielen Dank für Ihre Nachricht.">
 <meta name="robots" content="noindex, follow">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,600|Montserrat:700,400|Raleway:600&amp;display=fallback">
-<style>
-  :root {
-    --gold: #b69d78;
-    --dark: #19150f;
-    --muted: #413e3a;
-    --border: #dedad3;
-    --bg: #efefef;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: "Lato", sans-serif;
-    color: var(--muted);
-    background: var(--bg);
-  }
-  header {
-    background: #fff;
-    padding: 1.25rem 1.5rem;
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
-  }
-  header a {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--dark);
-  }
-  header img {
-    width: 150px;
-    height: auto;
-    display: block;
-  }
-  main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 1.25rem;
-  }
-  .card {
-    background: #fff;
-    max-width: 520px;
-    width: 100%;
-    padding: 2.5rem 2rem;
-    text-align: center;
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
-  }
-  h1 {
-    margin: 0 0 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    color: var(--dark);
-  }
-  p {
-    margin: 0 0 1.75rem;
-    line-height: 1.6;
-    font-size: 1.05rem;
-  }
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-  .links a {
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 0.9rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--dark);
-    border-bottom: 2px solid var(--gold);
-    padding: 0.35rem 0.1rem;
-    transition: color 0.2s ease;
-  }
-  .links a:hover,
-  .links a:focus {
-    color: var(--gold);
-  }
-  footer {
-    background: var(--dark);
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.75rem;
-  }
-  footer a { color: var(--gold); }
-</style>
-<link rel="stylesheet" id="cab-site-polish-css" href="../../assets/site-polish.css" media="all" />
+<link rel="icon" href="../../wp-content/uploads/2023/03/Logo_Carmen_Annen_Bonati_Google.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600&family=Montserrat:wght@400;700&family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+
 </head>
 <body>
-  <header>
-    <a href="../../">
-      <img src="../logo.svg" alt="">
+<a class="skip-link" href="#main">Zum Inhalt</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="../../" aria-label="Carmen Annen Bonati Art — Startseite">
+      <img src="../../wp-content/uploads/2021/02/Logo_Carmen_Annen_Bonati.svg" width="200" height="64" alt="Carmen Annen Bonati">
     </a>
-  </header>
-  <main>
-    <div class="card">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li class="has-sub">
+          <button type="button" class="submenu-toggle">Werke</button>
+          <ul class="submenu">
+            <li><a href="../../malerei-collagen/">Malerei und Collagen</a></li>
+            <li><a href="../../installationen/">Installationen</a></li>
+            <li><a href="../../objekte/">Objekte</a></li>
+            <li><a href="../../kunst-am-bau/">Kunst am Bau</a></li>
+            <li><a href="../../kreiselgestaltung/">Kreiselgestaltung</a></li>
+          </ul>
+        </li>
+        <li><a href="../../biografie/">Biografie</a></li>
+        <li><a href="../../kontakt/" aria-current="page">Kontakt</a></li>
+        <li><a href="../../bilder-zu-kaufen/">Bilder zu Kaufen</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="site-main">
+  <div class="thanks">
+    <div class="thanks__card">
       <h1>Vielen Dank</h1>
-      <p>Ihre Nachricht wurde erfolgreich übermittelt. Ich melde mich so bald wie möglich bei Ihnen.</p>
-      <div class="links">
-        <a href="../">Zurück zu Kontakt</a>
+      <p>Ihre Nachricht wurde gesendet. Ich melde mich so bald wie möglich bei Ihnen.</p>
+      <div class="thanks__links">
         <a href="../../">Zur Startseite</a>
+        <a href="../">Zurück zum Kontakt</a>
       </div>
     </div>
-  </main>
-  <footer>
-    &copy; Carmen Annen Bonati Art
-  </footer>
+  </div>
+
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <nav aria-label="Footer">
+      <a href="../../impressum/">Impressum</a>
+      <a href="../../datenschutzerklaerung/">Datenschutzerklärung</a>
+      <a href="../../kontakt/">Kontakt</a>
+    </nav>
+    <p class="copy">Copyright © 2026 Carmen Annen Bonati Art</p>
+  </div>
+</footer>
+<script src="../../assets/site.js" defer></script>
 </body>
 </html>
