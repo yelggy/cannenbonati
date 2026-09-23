@@ -22,7 +22,7 @@ This is a mirrored static snapshot of the public WordPress / Elementor / Astra s
 
 - Contact form markup is preserved for visual match; form submission will not work on a static host (no WordPress backend). Use the published phone/email on the Kontakt page as a fallback.
 - Some WordPress API / feed / xmlrpc links remain in the HTML head but are not required for viewing the site.
-- Asset filenames may include a literal `%3Fver=…` segment (from wget offline conversion of cache-busting query strings).
+- Asset filenames may include a literal `--q--ver=…` segment (from wget offline conversion of cache-busting query strings).
 
 ## GitHub Pages
 
